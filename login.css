@@ -1,0 +1,355 @@
+body{
+    margin: 0;
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#496897, #344e83);
+    padding: 12px;
+    padding-top: 15px;
+    padding-bottom: 7px;
+}
+
+.heading a img{
+    height: 34px;
+    margin-right: 420px;
+    position: relative;
+    top: 3px;
+    right: 5px;
+    user-select: none;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+}
+
+.loginField{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    color: white;
+    margin-right: 16px;
+}
+
+.loginField label{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.loginField input{
+    padding: 3px 3px 4px;
+    width: 140px;
+    height: 13px;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #00174e;
+    
+}
+
+.loginField a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #94abd8; 
+    margin-top: 6px;
+}
+
+.loginField a:hover{
+    text-decoration: underline;
+}
+
+
+.heading button{
+    align-self: center;
+    user-select: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 6px;
+    height: 24px;
+    border-radius: 1.5px;
+    border-width: 1.2px;
+    border-color: #1d3c7e;
+    border-style: solid;
+    outline: none;
+    color: white;
+    background-image: linear-gradient(#3662c2,#3358a7);
+    cursor: pointer;
+}
+
+.heading button:hover{
+    background-image: linear-gradient(#3057ac,#2e4e94);
+}
+
+.heading button:active{
+    background-image: linear-gradient(#294a91,#243d74);
+}
+
+/*--------------------------------------------------------------------------*/
+/* Body */
+
+.main{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#e7eaf1,#d6dae2);
+}
+
+.main div h1{
+   margin-bottom: 5px;
+   color: #252525;
+   padding: 0;
+   font-size: 36px;
+}
+
+.main div p{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #252525;
+ }
+
+.leftBody{
+    display: flex;
+    flex-direction: column;
+}
+
+.leftBody p{
+    font-size: 19px;
+}
+
+.rightBody{
+    position: relative;
+    margin-left: 200px;
+    width: 400px;
+}
+
+.rightBody p{
+    font-size: 19px;
+}
+
+.addAcc{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.accContainer{
+    position:relative;
+    width: 170px;
+    height: 210px;
+    margin-right: 20px;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 0.8px;
+    border-color: #cccccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color 0.3s,box-shadow 0.3s ;
+}
+
+.accContainer:hover{
+    box-shadow: 0px 0px 12px #cccccc;
+    border-color: #dfdfdf00;
+    
+}
+
+.photo{
+    height: 150px;
+    z-index: -1;
+}
+
+.photo img{
+    position:absolute;
+    width: 100%;
+}
+
+.conName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-image: linear-gradient(#ffffff,#f5f6f8);
+    z-index: 2;
+    height: 40px;
+    width: 100%;  
+    bottom: 0px;
+    font-size: 18px;
+}
+
+#add{
+    background-image: linear-gradient(#eff1f5,#e8eaee);
+    display: flex;
+    justify-content: center;
+}
+
+.addPlus{
+    position: absolute;
+    top: 70px;
+}
+
+.addPlus img{
+    width: 40px;
+}
+
+.nameReg{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+}
+
+.nameReg input{
+    width: 100%;
+    padding: 8px 10px;
+    border-style: solid;
+    border-color: #bac5db;
+    border-width: 1px;
+    border-radius: 4px;
+    outline-style: none;
+    margin-right: 5px;
+    font-size: 18px;
+}
+.nameReg :last-child{
+    margin-right: 0;
+}
+
+.regField{
+    margin-bottom: 10px;
+}
+
+.regField input{
+    padding: 8px 10px;
+    width: 100%;
+    border-style: solid;
+    border-color: #bac5db;
+    border-width: 1px;
+    border-radius: 4px;
+    font-size: 18px;
+    box-sizing : border-box;
+    outline-style: none;
+}
+
+.rightBody div:nth-child(5){
+    margin-bottom: 25px;
+}
+
+.regText{
+    margin-bottom: 7px;
+    font-weight: 600;
+    color: #505050;
+}
+
+.dobReg{
+    margin-bottom: 10px;
+}
+
+.dobReg select{
+    padding: 5px;
+    outline-style: none;
+}
+
+.gndrReg{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.gndrReg label{
+    font-size: 18px;
+    margin-right: 16px;
+}
+
+.termCon{
+    font-size: 11px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 320px;
+    color: #494949
+}
+
+.termCon a{
+    text-decoration: none;
+}
+
+.regisBtn{
+    width: 200px;
+    padding: 7px;
+    border-style: solid;
+    border-color: #2a4e32;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: 500;
+    background-image: linear-gradient(#5fb166,#3e8143);
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.regisBtn:hover{
+    background-image: linear-gradient(#66bb6d,#48924d);
+}
+
+.celebLink{
+    margin-top: 16px;
+    margin-bottom: 60px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #696969;
+}
+
+.celebLink a{
+    text-decoration: none;
+}
+
+.rightBody a{
+    color: #2e4e94;
+}
+
+/*-------------------------------------------------------------*/
+/*footer*/
+.footer{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footCenter{
+    display: inline-block;
+    text-align: left;
+    width: 1000px;
+}
+
+.footCenter ul{
+    padding: 0;
+    line-height: 1.6;
+    margin-bottom: 21px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #2e4e94;
+}
+
+.languages a{
+    padding-right: 10px;
+}
+
+.footerMenu li{
+    display: inline;
+    padding-right: 16px;
+}
+
+.signature{
+    font-size: 11px;
+    color: #686868;
+}
+
+
+
+
+
+
